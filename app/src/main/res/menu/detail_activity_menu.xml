@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_detail_revert"
+        android:title="Revert Changes"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_detail_unarchive"
+        android:title="Unarchive"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/menu_detail_priority"
+        android:title=""
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_detail_share"
+        android:icon="@drawable/ic_share_white"
+        android:title="Share"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_detail_edit_note"
+        android:icon="@drawable/ic_edit_white"
+        android:title="Edit"
+        app:showAsAction="always" />
+
+
+</menu>

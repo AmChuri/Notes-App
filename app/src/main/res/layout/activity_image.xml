@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr">
+
+    <include android:id="@+id/custom_toolbar" layout="@layout/custom_toolbar" />
+
+    <TextView
+        android:id="@+id/imageToText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="TEXT RECOGNITION \n (Latin based languages)\n "
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/main_list_toolbar" />
+
+
+    <ImageButton
+        android:id="@+id/imageToText_rotate_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:elevation="2dp"
+        android:onClick="imageRotateRight"
+        android:padding="20dp"
+        android:src="@drawable/ic_rotate_right"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_list_toolbar"
+        tools:visibility="visible" />
+
+    <ImageButton
+        android:id="@+id/imageToText_rotate_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:alpha="0.8"
+        android:elevation="2dp"
+        android:onClick="imageRotateLeft"
+        android:padding="20dp"
+        android:src="@drawable/ic_rotate_left"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/main_list_toolbar"
+        tools:visibility="visible" />
+
+
+    <ImageView
+        android:id="@+id/imageToText_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:onClick="imageAdd"
+        android:src="@drawable/ic_add_circle"
+        app:layout_constraintTop_toBottomOf="@id/imageToText_title" />
+
+
+    <EditText
+        android:id="@+id/imageToText_text"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@android:color/transparent"
+        android:gravity="top"
+        android:hint="Detected text will appear here"
+        android:inputType="textMultiLine"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageToText_copy"
+        app:layout_constraintTop_toBottomOf="@id/imageToText_image" />
+
+    <ImageButton
+        android:id="@+id/imageToText_copy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:alpha="0.5"
+        android:onClick="clickCopyText"
+        android:src="@drawable/ic_copy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageToText_image" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
