@@ -6,11 +6,9 @@ This project is a hobby project written in Kotlin:
   <br/>
 
 <div class="row">
-<img src="images/screenshots/scr1.jpeg" width="170">
 <img src="images/screenshots/scr2.jpeg" width="170">
 <img src="images/screenshots/scr4.jpeg" width="170">
 <img src="images/screenshots/scr5.jpeg" width="170">
-<img src="images/screenshots/scr6.jpeg" width="170">
 <img src="images/screenshots/scr8.jpeg" width="170">
 </div>
 
